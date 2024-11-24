@@ -1,0 +1,89 @@
+.how-it-work {
+	margin-bottom: 60px;
+	position: relative;
+}
+.main-how-it {
+	position: absolute;
+	top: 217px;
+	left: 500px;
+	background: #f6f6f6;
+	width: 544px;
+	height: 190px;
+	transform: rotate(-90deg);
+	border-radius: 50px;
+	box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.4);
+}
+.main-how-it h4 {
+	font-size: 54px;
+	padding-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#78c043;
+	font-weight: 800;
+}
+.bg-theme {
+	color: #008931;
+}
+.how-it-work .panel {
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+	color:#fff;
+	font-size: 16px;
+	background: #008931;
+	box-shadow: 0px 1px 7px 1px rgba(0,0,0,0.4);
+	margin-bottom:15px;
+}
+.how-it-work .panel span,
+.how-it-work .panel:hover span  {
+	-webkit-transition: all ease-out 0.3s;
+	-moz-transition: all ease-out 0.3s;
+	-o-transition: all ease-out 0.3s;
+	transition: all ease-out 0.3s;
+}
+.how-it-work .panel:hover span {
+	background: rgba(0,0,0,0.4);
+}
+.how-it-work .panel:nth-child(even) {
+	background: #78c043;
+}
+.how-it-work .panel-body {
+	overflow-y: auto;
+	overflow: visible;
+	height: 120px;
+	padding-left: 120px;
+	position: relative;
+}
+.how-it-work .panel-body span {
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	color: #008931;
+	background: #f6f6f6;
+	text-align: center;	
+	font-size: 36px;
+	font-weight: 800;
+	border-radius: 50%;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+}
+.how-it-work .panel-body span:before {
+	content: "";
+	position: absolute;
+	top: 35px;
+	left: -49px;
+	width: 50px;
+	height: 20px;
+	background: #f6f6f6;
+	box-shadow: 0px 8px 3px -5px rgba(0,0,0,0.2);
+}
+.how-it-work .panel:nth-child(even) span {
+	color: #78c043;
+}
+.how-it-work .step-heading {
+	font-size: 28px;
+	margin-top: 0px;
+	color: rgba(0,0,0,0.3);
+	padding-top:15px;
+}

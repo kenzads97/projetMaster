@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!------ Include the above in your HEAD tag ----------><head>
+
+<!------ Include the above in your HEAD tag ---------->
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/production.css') }}">
+    
+<!------ Include the above in your HEAD tag ---------->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Northstreet Restaurant">
+    <meta name="author" content="A.K.">
+
+    <title> etat1 </title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="myPage"  data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-expand-md bg-white navbar-white fixed-top">
+        <logo> <img src="/static/image/2.PNG"> </logo>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+            <span class="navbar-toggler-icon "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    
+        <a class="nav-link" style="border-bottom:#ffc266 3px solid;" href="/formecomcomparatifderealisationparabranche">
+                      </svg> Retour au formulaire </a>
+                </li> 
+                
+  <li class="nav-item dropdown">
+  <a class="nav-link  dropdown-toggle"  data-toggle="dropdown" href="#h"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+</svg>  télécharger </a>
+    
+    <ul class="dropdown-menu dropdown-menu-right">
+    
+    <li><a onclick="window.print()" class="dropdown-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+</svg>  télécharger en format PDF </a></li>
+    
+    <li><a onclick="fnExportToExcel('xlsx', 'myfirstsheet')" class="dropdown-item" > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-excel" viewBox="0 0 16 16">
+  <path d="M5.18 4.616a.5.5 0 0 1 .704.064L8 7.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 8l2.233 2.68a.5.5 0 0 1-.768.64L8 8.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 8 5.116 5.32a.5.5 0 0 1 .064-.704z"/>
+  <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+</svg>  télécharger en format Excel </a></li>
+
+    <li><a class="dropdown-item" href="#popup1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+</svg> sortir en graphe</a></li>
+    
+    </ul>
+</li>
+                <li class="nav-item dropdown">
+  <a class="nav-link  dropdown-toggle" href="#h" data-toggle="dropdown">{{session}} </a>
+    <ul class="dropdown-menu dropdown-menu-right">
+    <li><a class="dropdown-item" href="#butt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>    mon profile </a></li>
+    <li><a class="dropdown-item" href="/modifierprofilcom"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+              </svg>   modifier profile </a></li>
+    <li><a class="dropdown-item" href="/modifiermotdepassecom"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>   modifier mot de passe </a></li>
+     <li><a class="dropdown-item" href="se_deconnecterr"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+              <path d="M7.5 1v7h1V1h-1z"/>
+              <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+              </svg>   déconnexion </a></li>
+    </ul>
+</li>
+            </ul>
+        </div>  <br>
+
+    </nav>
+   
+    <div  id="c" style=" position: fixed"><h1 style="color: #000000; font-size: 15px;font-weight: bold; margin-top: 5px; margin-left:20px;  text-transform: uppercase; ">  
+    	<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-folder-symlink-fill" viewBox="0 0 16 16">
+  <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3zM2.19 3c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3H2.19zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742z" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"  fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+</svg> 
+ département commerciale<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"  fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+</svg>  Etat du comparatif des réalisations des décades par branche   </h1>
+</div>
+{% with messages = get_flashed_messages()%}
+  {% if messages %}
+       {% for message in messages%}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="width: 1363px;">
+                <strong>{{message}}</strong> 
+                <button type="button" class="close"  aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+        {% endfor  %}
+  
+   {% endif %}
+  {%endwith%}
+
+    
+   <div class="container" >
+        <div class="row" > 
+        <div style="margin-top: 152px;"> 
+  <h6 style="background-color:#F2F3F4;   font-weight: bolder; "> Numéro de décade  : {{numerod}}  </h6>
+  <h6 style="background-color:#F2F3F4;  font-weight: bolder;  ">Mois  : {{mois}}</h6>
+  <h6 style="background-color:#F2F3F4;   font-weight: bolder; ">  Année :{{annee}} </h6>
+  
+                 </div>   
+                </div>
+              <div style="width: 70%; float: left; height:200px ;margin-left:-20px">     
+                
+                <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <table id="example-table"  class="highchart" data-graph-container ="#graphcontainer" data-graph-type="line" style="border: solid #F1F1F1; height: 800px;" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                     <th rowspan="2" style="text-align: center;">Branche</th>
+                                     <th colspan="2"  style="text-align: center;">agences directes</th>
+                                     <th colspan="2"  style="text-align: center;">agences privée</th>
+                                     <th colspan="2" style="text-align: center;">banque assurances</th>
+                                     <th colspan="2" style="text-align: center;">totale</th>
+                                     <th colspan="2" style="text-align: center;">evanuation (%)</th>
+                                </tr>
+                                <tr>
+                                   <th>Contrat</th>
+                                   <th>Prime</th>
+
+                                   <th>Contrat</th>
+                                   <th>Prime</th>
+
+                                   <th>Contrat</th>
+                                   <th>Prime</th>
+                                   <th>Contrat</th>
+                                   <th>Prime</th>
+                                   <th>Contrat</th>
+                                   <th>Prime</th>
+                                </tr>
+                            </thead>
+                        {% if resultat2 is not none %}
+                            <tbody>
+                              <tr>
+                                {%if (resultat[36] ==0 and resultat2[0] ==0) and (resultat[42] ==0 and resultat2[6] ==0)  %}
+                                      <th>R.O</th>
+                                      <td>{{ resultat[0]}}</td>
+                                      <td>{{ resultat[1]}}</td>
+                                     <td>{{ resultat[12]}}</td>
+                                     <td>{{ resultat[13]}}</td>
+                                     <td>{{ resultat[24]}}</td>
+                                     <td>{{ resultat[25]}}</td>
+                                     <td>{{ resultat[36]}}</td>
+                                     <td>{{ resultat[42]}}</td>
+                                     <td style="color: orangered;">0%</td>
+                                     <td style="color: orangered;">0%</td>
+                                {% elif resultat2[0] ==0 and resultat2[6] ==0 %}
+                                   <th>R.O</th>
+                                  <td>{{ resultat[0]}}</td>
+                                  <td>{{ resultat[1]}}</td>
+                                  <td>{{ resultat[12]}}</td>
+                                  <td>{{ resultat[13]}}</td>
+                                  <td>{{ resultat[24]}}</td>
+                                  <td>{{ resultat[25]}}</td>
+                                  <td>{{ resultat[36]}}</td>
+                                  <td>{{ resultat[42]}}</td>
+                                  <td style="color: yellowgreen;">{{ ((0 +1 )*100)|round(1)  }}%</td>
+                                  <td style="color: yellowgreen;">{{ ((0 + 1)*100)|round(1)  }}%</td>
+                                {% elif resultat2[0] ==0  %}
+
+                                <th>R.O</th>
+                                <td>{{ resultat[0]}}</td>
+                                <td>{{ resultat[1]}}</td>
+                                <td>{{ resultat[12]}}</td>
+                                <td>{{ resultat[13]}}</td>
+                                <td>{{ resultat[24]}}</td>
+                                <td>{{ resultat[25]}}</td>
+                                <td>{{ resultat[36]}}</td>
+                                <td>{{ resultat[42]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% if ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[42]/ resultat2[6])-1)*100)|round(1)  }}%</td>
+                                {% elif ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) >=0 and 50 > ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) %}
+                                <td style="color: #F9953C  ">{{ (((resultat[42]/ resultat2[6])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[42]/ resultat2[6])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                {% elif resultat2[6] ==0  %}
+                                <th>R.O</th>
+                                <td>{{ resultat[0]}}</td>
+                                <td>{{ resultat[1]}}</td>
+                                <td>{{ resultat[12]}}</td>
+                                <td>{{ resultat[13]}}</td>
+                                <td>{{ resultat[24]}}</td>
+                                <td>{{ resultat[25]}}</td>
+                                <td>{{ resultat[36]}}</td>
+                                <td>{{ resultat[42]}}</td>
+
+                                {% if ( (((resultat[36]/ resultat2[0])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[36]/ resultat2[0])-1)*100)|round(1)  }}%</td>
+                                {% elif ( (((resultat[36]/ resultat2[0])-1)*100)|round(1) ) >=0 and 50 > ( (((resultat[36]/ resultat2[0])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;>{{  (((resultat[36]/ resultat2[0])-1)*100)|round(1)  }}%</td> 
+                                {% elif ( (((resultat[36]/ resultat2[0])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{  (((resultat[36]/ resultat2[0])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% else  %}
+
+                                         <th>R.O</th>
+                                         <td>{{ resultat[0]}}</td>
+                                         <td>{{ resultat[1]}}</td>
+                                         <td>{{ resultat[12]}}</td>
+                                         <td>{{ resultat[13]}}</td>
+                                         <td>{{ resultat[24]}}</td>
+                                         <td>{{ resultat[25]}}</td>
+                                         <td>{{ resultat[36]}}</td>
+                                         <td>{{ resultat[42]}}</td>
+                                           {% if ((((resultat[36]/ resultat2[0])-1)*100)|round(1)) >=50  %}
+                                           <td style="color:rgb(86, 206, 138);">{{ (((resultat[36]/ resultat2[0])-1)*100)|round(1)  }}%</td>
+                                           {% elif ((((resultat[36]/ resultat2[0])-1)*100)|round(1)) >=0 and 50 > ((((resultat[36]/ resultat2[0])-1)*100)|round(1)) %}
+                                           <td  style="color:#F9953C ;" >{{ (((resultat[36]/ resultat2[0])-1)*100)|round(1)  }}%</td> 
+                                           {% elif ((((resultat[36]/ resultat2[0])-1)*100)|round(1)) < 0  %} 
+                                           <td style="color:red;">{{ (((resultat[36]/ resultat2[0])-1)*100)|round(1)  }}%</td>                                   
+                                           {% endif %}
+                                           {% if ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) >=50  %}
+                                           <td style="color:rgb(86, 206, 138);">{{ (((resultat[42]/ resultat2[6])-1)*100)|round(1) }}%</td>
+                                           {% elif ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) >=0 and 50 > ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) %}
+                                           <td  style="color:#F9953C ;" >{{ (((resultat[42]/ resultat2[6])-1)*100)|round(1)  }}%</td> 
+                                           {% elif ((((resultat[42]/ resultat2[6])-1)*100)|round(1)) < 0  %} 
+                                           <td style="color:#ff0000;">{{ (((resultat[42]/ resultat2[6])-1)*100)|round(1)  }}%</td>                                   
+                                           {% endif %}
+
+                                           
+                                  {% endif %}
+                                  
+                              </tr>
+                              <tr>
+                                {%if (resultat[37] ==0 and resultat2[1] ==0) and (resultat[43] ==0 and resultat2[7] ==0)  %}
+
+                                <th>R.N.O</th>
+                                <td>{{ resultat[2]}}</td>
+                                <td>{{ resultat[3]}}</td>
+                                <td>{{ resultat[14]}}</td>
+                                <td>{{ resultat[15]}}</td>
+                                <td>{{ resultat[26]}}</td>
+                                <td>{{ resultat[27]}}</td>
+                                <td>{{ resultat[37]}}</td>
+                                <td>{{ resultat[43]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;"">0%</td>
+
+                                {% elif resultat2[1] ==0 and resultat2[7] ==0 %}
+                            
+                                <th>R.N.O</th>
+                                <td>{{ resultat[2]}}</td>
+                                <td>{{ resultat[3]}}</td>
+                                <td>{{ resultat[14]}}</td>
+                                <td>{{ resultat[15]}}</td>
+                                <td>{{ resultat[26]}}</td>
+                                <td>{{ resultat[27]}}</td>
+                                <td>{{ resultat[37]}}</td>
+                                <td>{{ resultat[43]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% elif resultat2[1] ==0  %}
+
+                                <th>R.N.O</th>
+                                <td>{{ resultat[2]}}</td>
+                                <td>{{ resultat[3]}}</td>
+                                <td>{{ resultat[14]}}</td>
+                                <td>{{ resultat[15]}}</td>
+                                <td>{{ resultat[26]}}</td>
+                                <td>{{ resultat[27]}}</td>
+                                <td>{{ resultat[37]}}</td>
+                                <td>{{ resultat[43]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% if ( (((resultat[43]/ resultat2[7])-1)*100)|round(1)  ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[43]/ resultat2[7])-1)*100)|round(1)   }}%</td>
+                                {% elif ( (((resultat[43]/ resultat2[7])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[43]/ resultat2[7])-1)*100)|round(1)  ) %}
+                                <td s style="color:#F9953C ;">{{  (((resultat[43]/ resultat2[7])-1)*100)|round(1)   }}%</td> 
+                                {% elif ( (((resultat[43]/ resultat2[7])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{  (((resultat[43]/ resultat2[7])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+                                {% elif resultat2[7] ==0  %}
+                                <th>R.N.O</th>
+                                <td>{{ resultat[2]}}</td>
+                                <td>{{ resultat[3]}}</td>
+                                <td>{{ resultat[14]}}</td>
+                                <td>{{ resultat[15]}}</td>
+                                <td>{{ resultat[26]}}</td>
+                                <td>{{ resultat[27]}}</td>
+                                <td>{{ resultat[37]}}</td>
+                                <td>{{ resultat[43]}}</td>
+
+                                {% if ( (((resultat[37]/ resultat2[1])-1)*100)|round(1)   ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[37]/ resultat2[1])-1)*100)|round(1)    }}%</td>
+                                {% elif ( (((resultat[37]/ resultat2[1])-1)*100)|round(1)   ) >=0 and 50 > ((((resultat[37]/ resultat2[1])-1)*100)|round(1)   ) %}
+                                <td  style="color:#F9953C ;">{{  (((resultat[37]/ resultat2[1])-1)*100)|round(1)   }}%</td> 
+                                {% elif ( (((resultat[37]/ resultat2[1])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[37]/ resultat2[1])-1)*100)|round(1)    }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% else  %}
+
+                                <th>R.N.O</th>
+                                <td>{{ resultat[2]}}</td>
+                                <td>{{ resultat[3]}}</td>
+                                <td>{{ resultat[14]}}</td>
+                                <td>{{ resultat[15]}}</td>
+                                <td>{{ resultat[26]}}</td>
+                                <td>{{ resultat[27]}}</td>
+                                <td>{{ resultat[37]}}</td>
+                                <td>{{ resultat[43]}}</td>
+
+                                {% if ((((resultat[37]/ resultat2[1])-1)*100)|round(1)  ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[37]/ resultat2[1])-1)*100)|round(1)    }}%</td>
+                                {% elif ((((resultat[37]/ resultat2[1])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[37]/ resultat2[1])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[37]/ resultat2[1])-1)*100)|round(1)   }}%</td> 
+                                {% elif ((((resultat[37]/ resultat2[1])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[37]/ resultat2[1])-1)*100)|round(1)    }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat[43]/ resultat2[7])-1)*100)|round(1)  ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[43]/ resultat2[7])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[43]/ resultat2[7])-1)*100)|round(1) ) >=0 and 50 > ((((resultat[43]/ resultat2[7])-1)*100)|round(1)  ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[43]/ resultat2[7])-1)*100)|round(1)   }}%</td> 
+                                {% elif ((((resultat[43]/ resultat2[7])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[43]/ resultat2[7])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+                             {% endif %}
+                            </tr>
+                              <tr style="background-color: #F1F1F1;"> 
+                                {%if (resultat3[6] ==0 and resultat4[0] ==0) and (resultat3[7] ==0 and resultat4[1] ==0)  %}
+
+                                <th >Totale auto </th>
+                                <td>{{ resultat3[0]}}</td>
+                                <td>{{ resultat3[1]}}</td>
+                                <td>{{ resultat3[2]}}</td>
+                                <td>{{ resultat3[3]}}</td>
+                                <td>{{ resultat3[4]}}</td>
+                                <td>{{ resultat3[5]}}</td>
+                                <td>{{ resultat3[6]}}</td>
+                                <td>{{ resultat3[7]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                {% elif resultat4[0] ==0 and resultat4[1] ==0 %}
+
+                                <th >Totale auto </th>
+                                <td>{{ resultat3[0]}}</td>
+                                <td>{{ resultat3[1]}}</td>
+                                <td>{{ resultat3[2]}}</td>
+                                <td>{{ resultat3[3]}}</td>
+                                <td>{{ resultat3[4]}}</td>
+                                <td>{{ resultat3[5]}}</td>
+                                <td>{{ resultat3[6]}}</td>
+                                <td>{{ resultat3[7]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% elif resultat4[0] ==0  %}
+
+                                <th >Totale auto </th>
+                                <td>{{ resultat3[0]}}</td>
+                                <td>{{ resultat3[1]}}</td>
+                                <td>{{ resultat3[2]}}</td>
+                                <td>{{ resultat3[3]}}</td>
+                                <td>{{ resultat3[4]}}</td>
+                                <td>{{ resultat3[5]}}</td>
+                                <td>{{ resultat3[6]}}</td>
+                                <td>{{ resultat3[7]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% if ( (((resultat3[7]/ resultat4[1])-1)*100)|round(1)    ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat3[7]/ resultat4[1])-1)*100)|round(1)    }}%</td>
+                                {% elif ( (((resultat3[7]/ resultat4[1])-1)*100)|round(1)    ) >=0 and 50 > ((((resultat3[7]/ resultat4[1])-1)*100)|round(1)   ) %}
+                                <td  style="color:#F9953C ;">{{  (((resultat3[7]/ resultat4[1])-1)*100)|round(1)    }}%</td> 
+                                {% elif ( (((resultat3[7]/ resultat4[1])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat3[7]/ resultat4[1])-1)*100)|round(1)     }}%</td>                                   
+                                {% endif %}
+                                {% elif resultat4[1] ==0  %}
+
+                                <th >Totale auto </th>
+                                <td>{{ resultat3[0]}}</td>
+                                <td>{{ resultat3[1]}}</td>
+                                <td>{{ resultat3[2]}}</td>
+                                <td>{{ resultat3[3]}}</td>
+                                <td>{{ resultat3[4]}}</td>
+                                <td>{{ resultat3[5]}}</td>
+                                <td>{{ resultat3[6]}}</td>
+                                <td>{{ resultat3[7]}}</td>
+
+                                {% if ( (((resultat3[6]/ resultat4[0])-1)*100)|round(1)    ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat3[6]/ resultat4[0])-1)*100)|round(1)    }}%</td>
+                                {% elif ( (((resultat3[6]/ resultat4[0])-1)*100)|round(1)   ) >=0 and 50 > ((((resultat3[6]/ resultat4[0])-1)*100)|round(1)  ) %}
+                                <td  style="color:#F9953C ;">{{  (((resultat3[6]/ resultat4[0])-1)*100)|round(1)   }}%</td> 
+                                {% elif ( (((resultat3[6]/ resultat4[0])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat3[6]/ resultat4[0])-1)*100)|round(1)     }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% else  %}
+
+                                  <th >Totale auto </th>
+                                  <td>{{ resultat3[0]}}</td>
+                                  <td>{{ resultat3[1]}}</td>
+                                  <td>{{ resultat3[2]}}</td>
+                                  <td>{{ resultat3[3]}}</td>
+                                  <td>{{ resultat3[4]}}</td>
+                                  <td>{{ resultat3[5]}}</td>
+                                  <td>{{ resultat3[6]}}</td>
+                                  <td>{{ resultat3[7]}}</td>
+                                  {% if ((((resultat3[6]/ resultat4[0])-1)*100)|round(1) ) >=50  %}
+                                  <td style="color:rgb(86, 206, 138);">{{ (((resultat3[6]/ resultat4[0])-1)*100)|round(1)   }}%</td>
+                                  {% elif ((((resultat3[6]/ resultat4[0])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[6]/ resultat4[0])-1)*100)|round(1) ) %}
+                                  <td  style="color:#F9953C ;">{{ (((resultat3[6]/ resultat4[0])-1)*100)|round(1)  }}%</td> 
+                                  {% elif ((((resultat3[6]/ resultat4[0])-1)*100)|round(1) ) < 0  %} 
+                                  <td style="color:red;">{{ (((resultat3[6]/ resultat4[0])-1)*100)|round(1)   }}%</td>                                   
+                                  {% endif %}
+                                  {% if ((((resultat3[7]/ resultat4[1])-1)*100)|round(1) ) >=50  %}
+                                  <td style="color:rgb(86, 206, 138);">{{ (((resultat3[7]/ resultat4[1])-1)*100)|round(1)  }}%</td>
+                                  {% elif ((((resultat3[7]/ resultat4[1])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[7]/ resultat4[1])-1)*100)|round(1) ) %}
+                                  <td  style="color:#F9953C ;">{{ (((resultat3[7]/ resultat4[1])-1)*100)|round(1)   }}%</td> 
+                                  {% elif ((((resultat3[7]/ resultat4[1])-1)*100)|round(1) ) < 0  %} 
+                                  <td style="color:red;">{{ (((resultat3[7]/ resultat4[1])-1)*100)|round(1)   }}%</td>                                   
+                                  {% endif %}
+
+                            {% endif %}
+                              </tr>
+                              <tr>
+                                {%if (resultat[38] ==0 and resultat2[2] ==0) and (resultat[44] ==0 and resultat2[8] ==0)  %}
+                                <th>Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                {% elif resultat2[2] ==0 and resultat2[8] ==0 %}
+                                <th>Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% elif resultat2[2] ==0  %}
+                                <th>Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% if ( (((resultat[44] /resultat2[9])-1)*100)|round(1)    ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[44] /resultat2[9])-1)*100)|round(1)    }}%</td>
+                                {% elif ( (((resultat[44] /resultat2[9])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[44] /resultat2[9])-1)*100)|round(1)  ) %}
+                                <td  style="color:#F9953C ;">{{  (((resultat[44] /resultat2[9])-1)*100)|round(1)   }}%</td> 
+                                {% elif ( (((resultat[44] /resultat2[9])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[44] /resultat2[9])-1)*100)|round(1)    }}%</td>                                   
+                                {% endif %}
+
+                                {% elif resultat2[8] ==0  %}
+                                <th>Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+
+                                {% if ( (((resultat[38] /resultat2[2])-1)*100)|round(1)    ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[38] /resultat2[2])-1)*100)|round(1)    }}%</td>
+                                {% elif ( (((resultat[38] /resultat2[2])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[38] /resultat2[2])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{  (((resultat[38] /resultat2[2])-1)*100)|round(1)  }}%</td> 
+                                {% elif ( (((resultat[38] /resultat2[2])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% else  %}
+                                <th>Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                {% if ((((resultat[38] /resultat2[2])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[38] /resultat2[2])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[38] /resultat2[2])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)  }}%</td> 
+                                {% elif ((((resultat[38] /resultat2[2])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)    }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat[44] /resultat2[8])-1)*100)|round(1)  ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[44] /resultat2[8])-1)*100)|round(1) ) >=0 and 50 > ((((resultat[44] /resultat2[8])-1)*100)|round(1)   ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td> 
+                                {% elif ((((resultat[44] /resultat2[8])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{(((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+
+
+
+                                {% endif %}
+                            </tr>                                 
+                            <tr style="background-color: #F1F1F1;">
+                                {%if (resultat[38] ==0 and resultat2[2] ==0) and (resultat[44] ==0 and resultat2[8] ==0)  %}
+                                <th>Totale Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                {% elif resultat2[2] ==0 and resultat2[8] ==0 %}
+                                <th>Totale Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% elif resultat2[2] ==0  %}
+
+                                <th>Totale Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+
+                                {% if ( (((resultat[44] /resultat2[8])-1)*100)|round(1)    ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td>
+                                {% elif ( (((resultat[44] /resultat2[8])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[44] /resultat2[8])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[44] /resultat2[8])-1)*100)|round(1)  }}%</td> 
+                                {% elif ( (((resultat[44] /resultat2[8])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+                                {% elif resultat2[8] ==0  %}
+                                <th>Totale Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+
+                                {% if ( (((resultat[38] /resultat2[2])-1)*100)|round(1)    ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{  (((resultat[38] /resultat2[2])-1)*100)|round(1)   }}%</td>
+                                {% elif ( (((resultat[38] /resultat2[2])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[38] /resultat2[2])-1)*100)|round(1) ) %}
+                                <td style="color:#F9953C ;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)  }}%</td> 
+                                {% elif ( (((resultat[38] /resultat2[2])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)  }}%</td>
+                                {% else  %}
+                                <th>Totale Risque simple</th>
+                                <td>{{ resultat[4]}}</td>
+                                <td>{{ resultat[5]}}</td>
+                                <td>{{ resultat[16]}}</td>
+                                <td>{{ resultat[17]}}</td>
+                                <td>{{ resultat[28]}}</td>
+                                <td>{{ resultat[29]}}</td>
+                                <td>{{ resultat[38]}}</td>
+                                <td>{{ resultat[44]}}</td>
+                                {% if ((((resultat[38] /resultat2[2])-1)*100)|round(1)  ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[38] /resultat2[2])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[38] /resultat2[2])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)   }}%</td> 
+                                {% elif ((((resultat[38] /resultat2[2])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[38] /resultat2[2])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat[44] /resultat2[8])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[44] /resultat2[8])-1)*100)|round(1) ) >=0 and 50 > ((((resultat[44] /resultat2[8])-1)*100)|round(1)   ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[44] /resultat2[8])-1)*100)|round(1)  }}%</td> 
+                                {% elif ((((resultat[44] /resultat2[8])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat[44] /resultat2[8])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+                                {% endif %}
+                            </tr> 
+                            <tr>
+                                {%if (resultat[29] ==0 and resultat2[3] ==0) and (resultat[45] ==0 and resultat2[9] ==0)  %}
+                                <th> Risque divers industriel</th>
+                                <td>{{ resultat[6]}}</td>
+                                <td>{{ resultat[7]}}</td>
+                                <td>{{ resultat[18]}}</td>
+                                <td>{{ resultat[19]}}</td>
+                                <td>{{ resultat[30]}}</td>
+                                <td>{{ resultat[31]}}</td>
+                                <td>{{ resultat[39]}}</td>
+                                <td>{{ resultat[45]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+
+                                {% elif resultat2[3] ==0 and resultat2[9] ==0 %}
+
+                                <th> Risque divers industriel</th>
+                                <td>{{ resultat[6]}}</td>
+                                <td>{{ resultat[7]}}</td>
+                                <td>{{ resultat[18]}}</td>
+                                <td>{{ resultat[19]}}</td>
+                                <td>{{ resultat[30]}}</td>
+                                <td>{{ resultat[31]}}</td>
+                                <td>{{ resultat[39]}}</td>
+                                <td>{{ resultat[45]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{((0+1)*100)|round(1)}}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{((0+1)*100)|round(1)}}%</td>
+
+                                {% elif resultat2[3] ==0  %}
+                                <th> Risque divers industriel</th>
+                                <td>{{ resultat[6]}}</td>
+                                <td>{{ resultat[7]}}</td>
+                                <td>{{ resultat[18]}}</td>
+                                <td>{{ resultat[19]}}</td>
+                                <td>{{ resultat[30]}}</td>
+                                <td>{{ resultat[31]}}</td>
+                                <td>{{ resultat[39]}}</td>
+                                <td>{{ resultat[45]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{((0+1)*100)|round(1)}}%</td>
+
+                                {% if (((( resultat[45]/ resultat2[9])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{((( resultat[45]/ resultat2[9])-1)*100)|round(1)   }}%</td>
+                                {% elif (((( resultat[45]/ resultat2[9])-1)*100)|round(1)) >=0 and 50 > (((( resultat[45]/ resultat2[9])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;"">{{ ((( resultat[45]/ resultat2[9])-1)*100)|round(1) }}%</td> 
+                                {% elif (((( resultat[45]/ resultat2[9])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{((( resultat[45]/ resultat2[9])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+                                {% elif resultat2[9] ==0  %}
+                                <th> Risque divers industriel</th>
+                                <td>{{ resultat[6]}}</td>
+                                <td>{{ resultat[7]}}</td>
+                                <td>{{ resultat[18]}}</td>
+                                <td>{{ resultat[19]}}</td>
+                                <td>{{ resultat[30]}}</td>
+                                <td>{{ resultat[31]}}</td>
+                                <td>{{ resultat[39]}}</td>
+                                <td>{{ resultat[45]}}</td>
+
+                                {% if (((( resultat[39]/ resultat2[3])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{((( resultat[39]/ resultat2[3])-1)*100)|round(1) }}%</td>
+                                {% elif (((( resultat[39]/ resultat2[3])-1)*100)|round(1)) >=0 and 50 > (((( resultat[39]/ resultat2[3])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ ((( resultat[39]/ resultat2[3])-1)*100)|round(1) }}%</td> 
+                                {% elif (((( resultat[39]/ resultat2[3])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{((( resultat[39]/ resultat2[3])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{((0+1)*100)|round(1)}}%</td>
+  
+                                {% else  %}
+                                <th> Risque divers industriel</th>
+                                <td>{{ resultat[6]}}</td>
+                                <td>{{ resultat[7]}}</td>
+                                <td>{{ resultat[18]}}</td>
+                                <td>{{ resultat[19]}}</td>
+                                <td>{{ resultat[30]}}</td>
+                                <td>{{ resultat[31]}}</td>
+                                <td>{{ resultat[39]}}</td>
+                                <td>{{ resultat[45]}}</td>
+                                {% if (((( resultat[39]/ resultat2[3])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((( resultat[39]/ resultat2[3])-1)*100)|round(1)  }}%</td>
+                                {% elif (((( resultat[39]/ resultat2[3])-1)*100)|round(1)  ) >=0 and 50 > (((( resultat[39]/ resultat2[3])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ ((( resultat[39]/ resultat2[3])-1)*100)|round(1)  }}%</td> 
+                                {% elif (((( resultat[39]/ resultat2[3])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ ((( resultat[39]/ resultat2[3])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                {% if (((( resultat[45]/ resultat2[9])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{((( resultat[45]/ resultat2[9])-1)*100)|round(1)   }}%</td>
+                                {% elif (((( resultat[45]/ resultat2[9])-1)*100)|round(1) ) >=0 and 50 > (((( resultat[45]/ resultat2[9])-1)*100)|round(1)   ) %}
+                                <td  style="color:#F9953C ;">{{ ((( resultat[45]/ resultat2[9])-1)*100)|round(1)  }}%</td> 
+                                {% elif (((( resultat[45]/ resultat2[9])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{((( resultat[45]/ resultat2[9])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+
+                                {% endif %}
+                            </tr>  
+                               
+                            <tr>
+                                {%if (resultat[40] ==0 and resultat2[4] ==0) and (resultat[46] ==0 and resultat2[10] ==0)  %}
+                                <th> Risque agricole</th>
+                                <td>{{ resultat[8]}}</td>
+                                <td>{{ resultat[9]}}</td>
+                                <td>{{ resultat[20]}}</td>
+                                <td>{{ resultat[21]}}</td>
+                                <td>{{ resultat[32]}}</td>
+                                <td>{{ resultat[33]}}</td>
+                                <td>{{ resultat[40]}}</td>
+                                <td>{{ resultat[46]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+
+                                {% elif resultat2[4] ==0 and resultat2[10] ==0 %}
+                                <th> Risque agricole</th>
+                                <td>{{ resultat[8]}}</td>
+                                <td>{{ resultat[9]}}</td>
+                                <td>{{ resultat[20]}}</td>
+                                <td>{{ resultat[21]}}</td>
+                                <td>{{ resultat[32]}}</td>
+                                <td>{{ resultat[33]}}</td>
+                                <td>{{ resultat[40]}}</td>
+                                <td>{{ resultat[46]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1) }}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1) }}%</td>
+
+                                {% elif resultat2[4] ==0  %}
+                                <th> Risque agricole</th>
+                                <td>{{ resultat[8]}}</td>
+                                <td>{{ resultat[9]}}</td>
+                                <td>{{ resultat[20]}}</td>
+                                <td>{{ resultat[21]}}</td>
+                                <td>{{ resultat[32]}}</td>
+                                <td>{{ resultat[33]}}</td>
+                                <td>{{ resultat[40]}}</td>
+                                <td>{{ resultat[46]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1) }}%</td>
+                                {% if ((((resultat[46]/resultat2[10])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[46]/resultat2[10])-1)*100)|round(1) }}%</td>
+                                {% elif ((((resultat[46]/resultat2[10])-1)*100)|round(1)) >=0 and 50 > ((((resultat[46]/resultat2[10])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[46]/resultat2[10])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat[46]/resultat2[10])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{(((resultat[46]/resultat2[10])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+
+                                {% elif resultat2[10] ==0  %}
+                                <th> Risque agricole</th>
+                                <td>{{ resultat[8]}}</td>
+                                <td>{{ resultat[9]}}</td>
+                                <td>{{ resultat[20]}}</td>
+                                <td>{{ resultat[21]}}</td>
+                                <td>{{ resultat[32]}}</td>
+                                <td>{{ resultat[33]}}</td>
+                                <td>{{ resultat[40]}}</td>
+                                <td>{{ resultat[46]}}</td>
+
+                                {% if ((((resultat[40]/resultat2[4])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[40]/resultat2[4])-1)*100)|round(1) }}%</td>
+                                {% elif ((((resultat[40]/resultat2[4])-1)*100)|round(1)) >=0 and 50 > ((((resultat[40]/resultat2[4])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[40]/resultat2[4])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat[40]/resultat2[4])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{(((resultat[40]/resultat2[4])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1) }}%</td>
+
+
+                                {% else  %}
+                                <th> Risque agricole</th>
+                                <td>{{ resultat[8]}}</td>
+                                <td>{{ resultat[9]}}</td>
+                                <td>{{ resultat[20]}}</td>
+                                <td>{{ resultat[21]}}</td>
+                                <td>{{ resultat[32]}}</td>
+                                <td>{{ resultat[33]}}</td>
+                                <td>{{ resultat[40]}}</td>
+                                <td>{{ resultat[46]}}</td>
+                                {% if ((((resultat[40]/resultat2[4])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[40]/resultat2[4])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[40]/resultat2[4])-1)*100)|round(1)  ) >=0 and 50 > ((((resultat[40]/resultat2[4])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[40]/resultat2[4])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat[40]/resultat2[4])-1)*100)|round(1)  ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[40]/resultat2[4])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat[46]/resultat2[10])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[46]/resultat2[10])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[46]/resultat2[10])-1)*100)|round(1) ) >=0 and 50 > ((((resultat[46]/resultat2[10])-1)*100)|round(1)   ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[46]/resultat2[10])-1)*100)|round(1)  }}%</td> 
+                                {% elif ((((resultat[46]/resultat2[10])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat[46]/resultat2[10])-1)*100)|round(1)   }}%</td>                                   
+                                {% endif %}
+
+
+                                {% endif %}
+                            </tr>  
+                               
+                            <tr>
+                                {%if (resultat[41] ==0 and resultat2[5] ==0) and (resultat[47] ==0 and resultat2[11] ==0)  %}
+
+                                <th> Risque transport</th>
+                                <td>{{ resultat[10]}}</td>
+                                <td>{{ resultat[11]}}</td>
+                                <td>{{ resultat[22]}}</td>
+                                <td>{{ resultat[23]}}</td>
+                                <td>{{ resultat[34]}}</td>
+                                <td>{{ resultat[35]}}</td>
+                                <td>{{ resultat[41]}}</td>
+                                <td>{{ resultat[47]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+
+                                {% elif resultat2[5] ==0 and resultat2[11] ==0 %}
+                                <th> Risque transport</th>
+                                <td>{{ resultat[10]}}</td>
+                                <td>{{ resultat[11]}}</td>
+                                <td>{{ resultat[22]}}</td>
+                                <td>{{ resultat[23]}}</td>
+                                <td>{{ resultat[34]}}</td>
+                                <td>{{ resultat[35]}}</td>
+                                <td>{{ resultat[41]}}</td>
+                                <td>{{ resultat[47]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+
+                                {% elif resultat2[5] ==0  %}
+                                <th> Risque transport</th>
+                                <td>{{ resultat[10]}}</td>
+                                <td>{{ resultat[11]}}</td>
+                                <td>{{ resultat[22]}}</td>
+                                <td>{{ resultat[23]}}</td>
+                                <td>{{ resultat[34]}}</td>
+                                <td>{{ resultat[35]}}</td>
+                                <td>{{ resultat[41]}}</td>
+                                <td>{{ resultat[47]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                {% if ((((resultat[47]/resultat2[11])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[47]/resultat2[11])-1)*100)|round(1)}}%</td>
+                                {% elif ((((resultat[47]/resultat2[11])-1)*100)|round(1)) >=0 and 50 > ((((resultat[47]/resultat2[11])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[47]/resultat2[11])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat[47]/resultat2[11])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{(((resultat[47]/resultat2[11])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+
+                                {% elif resultat2[11] ==0  %}
+                                <th> Risque transport</th>
+                                <td>{{ resultat[10]}}</td>
+                                <td>{{ resultat[11]}}</td>
+                                <td>{{ resultat[22]}}</td>
+                                <td>{{ resultat[23]}}</td>
+                                <td>{{ resultat[34]}}</td>
+                                <td>{{ resultat[35]}}</td>
+                                <td>{{ resultat[41]}}</td>
+                                <td>{{ resultat[47]}}</td>
+                                {% if ((((resultat[41]/resultat2[5])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[41]/resultat2[5])-1)*100)|round(1)}}%</td>
+                                {% elif ((((resultat[41]/resultat2[5])-1)*100)|round(1)) >=0 and 50 > ((((resultat[41]/resultat2[5])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{(((resultat[41]/resultat2[5])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat[41]/resultat2[5])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{(((resultat[41]/resultat2[5])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                {% else  %}
+                                <th> Risque transport</th>
+                                <td>{{ resultat[10]}}</td>
+                                <td>{{ resultat[11]}}</td>
+                                <td>{{ resultat[22]}}</td>
+                                <td>{{ resultat[23]}}</td>
+                                <td>{{ resultat[34]}}</td>
+                                <td>{{ resultat[35]}}</td>
+                                <td>{{ resultat[41]}}</td>
+                                <td>{{ resultat[47]}}</td>
+                                {% if ((((resultat[41]/resultat2[5])-1)*100)|round(1) ) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat[41]/resultat2[5])-1)*100)|round(1)   }}%</td>
+                                {% elif ((((resultat[41]/resultat2[5])-1)*100)|round(1) ) >=0 and 50 > ((((resultat[41]/resultat2[5])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[41]/resultat2[5])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat[41]/resultat2[5])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat[41]/resultat2[5])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat[47]/resultat2[11])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat[47]/resultat2[11])-1)*100)|round(1)  }}%</td>
+                                {% elif ((((resultat[47]/resultat2[11])-1)*100)|round(1) ) >=0 and 50 > ((((resultat[47]/resultat2[11])-1)*100)|round(1)  ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat[47]/resultat2[11])-1)*100)|round(1)  }}%</td> 
+                                {% elif ((((resultat[47]/resultat2[11])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat[47]/resultat2[11])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+
+
+                                {% endif %}
+                            </tr>  
+                               
+                            <tr style="background-color: #F1F1F1;"> 
+                                {%if (resultat3[14] ==0 and resultat4[2] ==0) and (resultat3[15] ==0 and resultat4[3] ==0)  %}
+
+                                <th >Totale ass industriel  </th>
+                                <td>{{ resultat3[8]}}</td>
+                                <td>{{ resultat3[9]}}</td>
+                                <td>{{ resultat3[10]}}</td>
+                                <td>{{ resultat3[11]}}</td>
+                                <td>{{ resultat3[12]}}</td>
+                                <td>{{ resultat3[13]}}</td>
+                                <td>{{ resultat3[14]}}</td>
+                                <td>{{ resultat3[15]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+
+                                {% elif resultat4[2] ==0 and resultat4[3] ==0 %}
+    
+                                <th >Totale ass industriel  </th>
+                                <td>{{ resultat3[8]}}</td>
+                                <td>{{ resultat3[9]}}</td>
+                                <td>{{ resultat3[10]}}</td>
+                                <td>{{ resultat3[11]}}</td>
+                                <td>{{ resultat3[12]}}</td>
+                                <td>{{ resultat3[13]}}</td>
+                                <td>{{ resultat3[14]}}</td>
+                                <td>{{ resultat3[15]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+
+                             
+                                {% elif resultat4[2] ==0  %}
+                                <th >Totale ass industriel  </th>
+                                <td>{{ resultat3[8]}}</td>
+                                <td>{{ resultat3[9]}}</td>
+                                <td>{{ resultat3[10]}}</td>
+                                <td>{{ resultat3[11]}}</td>
+                                <td>{{ resultat3[12]}}</td>
+                                <td>{{ resultat3[13]}}</td>
+                                <td>{{ resultat3[14]}}</td>
+                                <td>{{ resultat3[15]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                {% if ((((resultat3[15]/resultat4[3])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat3[15]/resultat4[3])-1)*100)|round(1)}}%</td>
+                                {% elif ((((resultat3[15]/resultat4[3])-1)*100)|round(1)) >=0 and 50 > ((((resultat3[15]/resultat4[3])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{(((resultat3[15]/resultat4[3])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat3[15]/resultat4[3])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{(((resultat3[15]/resultat4[3])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                {% elif resultat4[3] ==0  %}
+
+                                <th >Totale ass industriel  </th>
+                                <td>{{ resultat3[8]}}</td>
+                                <td>{{ resultat3[9]}}</td>
+                                <td>{{ resultat3[10]}}</td>
+                                <td>{{ resultat3[11]}}</td>
+                                <td>{{ resultat3[12]}}</td>
+                                <td>{{ resultat3[13]}}</td>
+                                <td>{{ resultat3[14]}}</td>
+                                <td>{{ resultat3[15]}}</td>
+                                {% if ((((resultat3[14]/resultat4[2])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat3[14]/resultat4[2])-1)*100)|round(1)}}%</td>
+                                {% elif ((((resultat3[14]/resultat4[2])-1)*100)|round(1)) >=0 and 50 > ((((resultat3[14]/resultat4[2])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{(((resultat3[14]/resultat4[2])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat3[14]/resultat4[2])-1)*100)|round(1)) < 0  %} 
+                                <td style="color:red;">{{(((resultat3[14]/resultat4[2])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                {% else  %}
+                                <th >Totale ass industriel  </th>
+                                <td>{{ resultat3[8]}}</td>
+                                <td>{{ resultat3[9]}}</td>
+                                <td>{{ resultat3[10]}}</td>
+                                <td>{{ resultat3[11]}}</td>
+                                <td>{{ resultat3[12]}}</td>
+                                <td>{{ resultat3[13]}}</td>
+                                <td>{{ resultat3[14]}}</td>
+                                <td>{{ resultat3[15]}}</td>
+                                {% if ((((resultat3[14]/resultat4[2])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat3[14]/resultat4[2])-1)*100)|round(1)  }}%</td>
+                                {% elif ((((resultat3[14]/resultat4[2])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[14]/resultat4[2])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat3[14]/resultat4[2])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat3[14]/resultat4[2])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat3[14]/resultat4[2])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat3[15]/resultat4[3])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat3[15]/resultat4[3])-1)*100)|round(1) }}%</td>
+                                {% elif ((((resultat3[15]/resultat4[3])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[15]/resultat4[3])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat3[15]/resultat4[3])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat3[15]/resultat4[3])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat3[15]/resultat4[3])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+
+                                {% endif %}
+                            </tr>
+                            <tr style="background-color: #F1F1F1;"> 
+                                {%if (resultat3[22] ==0 and resultat4[4] ==0) and (resultat3[23] ==0 and resultat4[5] ==0)  %}
+                                <th >Totale  </th>
+                                <td>{{ resultat3[16]}}</td>
+                                <td>{{ resultat3[17]}}</td>
+                                <td>{{ resultat3[18]}}</td>
+                                <td>{{ resultat3[19]}}</td>
+                                <td>{{ resultat3[20]}}</td>
+                                <td>{{ resultat3[21]}}</td>
+                                <td>{{ resultat3[22]}}</td>
+                                <td>{{ resultat3[23]}}</td>
+                                <td  style="color:#F9953C ;">0%</td>
+                                <td  style="color:#F9953C ;">0%</td>
+
+                                {% elif resultat4[4] ==0 and resultat4[5] ==0 %}
+
+                                <th >Totale  </th>
+                                <td>{{ resultat3[16]}}</td>
+                                <td>{{ resultat3[17]}}</td>
+                                <td>{{ resultat3[18]}}</td>
+                                <td>{{ resultat3[19]}}</td>
+                                <td>{{ resultat3[20]}}</td>
+                                <td>{{ resultat3[21]}}</td>
+                                <td>{{ resultat3[22]}}</td>
+                                <td>{{ resultat3[23]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                {% elif resultat4[4] ==0  %}
+
+                                <th >Totale  </th>
+                                <td>{{ resultat3[16]}}</td>
+                                <td>{{ resultat3[17]}}</td>
+                                <td>{{ resultat3[18]}}</td>
+                                <td>{{ resultat3[19]}}</td>
+                                <td>{{ resultat3[20]}}</td>
+                                <td>{{ resultat3[21]}}</td>
+                                <td>{{ resultat3[22]}}</td>
+                                <td>{{ resultat3[23]}}</td>
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+
+                                {% if ((((resultat3[23]/resultat4[5])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat3[23]/resultat4[5])-1)*100)|round(1)}}%</td>
+                                {% elif ((((resultat3[23]/resultat4[5])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[23]/resultat4[5])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat3[23]/resultat4[5])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat3[23]/resultat4[5])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat3[23]/resultat4[5])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                {% elif resultat4[5] ==0  %}
+                                <th >Totale  </th>
+                                <td>{{ resultat3[16]}}</td>
+                                <td>{{ resultat3[17]}}</td>
+                                <td>{{ resultat3[18]}}</td>
+                                <td>{{ resultat3[19]}}</td>
+                                <td>{{ resultat3[20]}}</td>
+                                <td>{{ resultat3[21]}}</td>
+                                <td>{{ resultat3[22]}}</td>
+                                <td>{{ resultat3[23]}}</td>
+
+                                {% if ((((resultat3[22]/resultat4[4])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat3[22]/resultat4[4])-1)*100)|round(1)}}%</td>
+                                {% elif ((((resultat3[22]/resultat4[4])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[22]/resultat4[4])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat3[22]/resultat4[4])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat3[22]/resultat4[4])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat3[22]/resultat4[4])-1)*100)|round(1)  }}%</td>                                   
+                                {% endif %}
+                                <td style="color:rgb(86, 206, 138);">{{ ((0+1)*100)|round(1)}}%</td>
+                                {% else  %}
+                                <th >Totale  </th>
+                                <td>{{ resultat3[16]}}</td>
+                                <td>{{ resultat3[17]}}</td>
+                                <td>{{ resultat3[18]}}</td>
+                                <td>{{ resultat3[19]}}</td>
+                                <td>{{ resultat3[20]}}</td>
+                                <td>{{ resultat3[21]}}</td>
+                                <td>{{ resultat3[22]}}</td>
+                                <td>{{ resultat3[23]}}</td>
+                                {% if ((((resultat3[22]/resultat4[4])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{ (((resultat3[22]/resultat4[4])-1)*100)|round(1)  }}%</td>
+                                {% elif ((((resultat3[22]/resultat4[4])-1)*100)|round(1) ) >=0 and 50 > ((((resultat3[22]/resultat4[4])-1)*100)|round(1)) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat3[22]/resultat4[4])-1)*100)|round(1) }}%</td> 
+                                {% elif ((((resultat3[22]/resultat4[4])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{ (((resultat3[22]/resultat4[4])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+                                {% if ((((resultat3[23]/resultat4[5])-1)*100)|round(1)) >=50  %}
+                                <td style="color:rgb(86, 206, 138);">{{(((resultat3[23]/resultat4[5])-1)*100)|round(1) }}%</td>
+                                {% elif ((((resultat3[23]/resultat4[5])-1)*100)|round(1)) >=0 and 50 > ((((resultat3[23]/resultat4[5])-1)*100)|round(1) ) %}
+                                <td  style="color:#F9953C ;">{{ (((resultat3[23]/resultat4[5])-1)*100)|round(1)}}%</td> 
+                                {% elif ((((resultat3[23]/resultat4[5])-1)*100)|round(1) ) < 0  %} 
+                                <td style="color:red;">{{(((resultat3[23]/resultat4[5])-1)*100)|round(1) }}%</td>                                   
+                                {% endif %}
+
+
+                                
+                                {% endif %}
+                            </tr>
+                        </tbody>
+                      
+
+                        {% endif %}
+
+                    </table>
+                    
+            </div>
+           </div>
+           </div>
+    <div  style="width: 25%; float: right;margin: 75px auto;margin-right:-20px, height: 200px;margin-top: -5px;">
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+<table id="example-table"  class="highchart" data-graph-container ="#graphcontainer" data-graph-type="line" style="border: solid #F1F1F1; height: 800px;" cellspacing="0">
+                  
+                  <thead>
+                    <tr>
+                   
+                    <th rowspan="2" style="text-align: center;"></th>
+                    <th colspan="2"  style="text-align: center;">mois {{mois}} {{annee| int -1}} <br><br> </th>
+                   </tr>
+                   <tr>
+                   <th>Contrats</th>
+                   <th>Primes</th>
+                   
+                   </tr>
+              </thead>
+              <tr>
+                <th>R.O</th>
+                <td>{{resultat2[0]}}</td>
+                <td>{{resultat2[6]}}</td>
+                </tr>
+                <tr>
+                <th>R.N.O</th>
+                <td>{{resultat2[1]}}</td>
+                <td>{{resultat2[7]}}</td>
+                </tr>
+                <tr style="background-color: #F1F1F1;">
+                    <th >totale auto</th>
+                    <td>{{resultat4[0]}}</td>
+                    <td>{{resultat4[1]}}</td>
+                    </tr>
+                    <tr>
+                        <th>Risque simple</th>
+                        <td>{{resultat2[2]}}</td>
+                        <td>{{resultat2[8]}}</td>
+                    </tr>   
+                    <tr style="background-color: #F1F1F1;">
+                        <th>totale Risque simple</th>
+                        <td>{{resultat2[2]}}</td>
+                        <td>{{resultat2[8]}}</td>
+                    </tr>
+                    <tr>
+                        <th> Risque industriel</th>
+                        <td>{{resultat2[3]}}</td>
+                        <td>{{resultat2[9]}}</td>
+                    </tr>
+                    <tr>
+                        <th> Risque agricole</th>
+                        <td>{{resultat2[4]}}</td>
+                        <td>{{resultat2[10]}}</td>
+                    </tr>
+                    <tr>
+                        <th> Risque transport</th>
+                        <td>{{resultat2[5]}}</td>
+                        <td>{{resultat2[11]}}</td>
+                    </tr>
+                    <tr style="background-color: #F1F1F1;">
+                        <th> totale ass industriel</th>
+                        <td>{{resultat4[2]}}</td>
+                        <td>{{resultat4[3]}}</td>
+                    </tr>
+                    <tr style="background-color: #F1F1F1;">
+                        <th>totale </th>
+                        <td>{{resultat4[4]}}</td>
+                        <td>{{resultat4[5]}}</td>
+                         
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+
+
+<div id="popup1" class="overlay">
+  <div  class="popup"  >
+<a class="close" href="#">×</a>
+
+ <h2> graphe en ligne pour l'état de récapitulatif par agence et par produit</h2>
+ <div> 
+  <h9 style="color: goldenrod; border-left: -10px; text-decoration-style: "> Mois  :  {{mois}} </h9>
+  <h9 style="color: goldenrod; border-left: -10px;">Année :{{annee}}</h9>
+                 </div>  
+<div id="graphcontainer" ></div>
+<div class="box">
+ <a class="button" onclick="window.print()">Cliquez ici pour télécharger le graphe</a>
+</div>
+ </div>
+</div>
+     
+
+
+
+
+<div id="butt" class="overlay" style= "margin-top: 140px;">
+ <div class="popup" style="width: 500px; height: 300px; ">
+ <a class="close" href="#">×</a>
+ <img src="/static/image/yy.jpg"  style=" src : margin:100px; height: 100px; display: block; margin: auto;"><br>
+ <div class="content">
+
+  <h2 class="para"style="font-size:25px;  font-family: Georgia, 'Times New Roman', Times, serif;color: red" >Mon profile </h2>
+ <p class="para"style="font-size:20px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Nom d'utilisateur :   {{session}}  </p>
+ <p class="para"style="font-size:20px;text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Adresse E-mail : {{session2}} </p>
+ </div>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highchartTable/2.0.0/jquery.highchartTable.js"></script>
+<script>
+  $(document).ready(function() {
+  $('table.highchart').highchartTable();
+});
+</script>
+<script>
+function fnExportToExcel(fileExtension, fileName){
+      var elt = document.getElementById('example-table');
+      var wb = XLSX.utils.table_to_book(elt, {sheet: "sheet1"});
+      return XLSX.writeFile(wb, fileName+"." +fileExtension || ('MySheetName.'+(fileExtension || 'xlsx')));
+}
+</script>
+
+<style type="text/css">
+  #c{
+      background-color:#F2F3F4;
+      font-family:time new roman;
+      height: 55px;
+      width: 725%;
+      margin-top: 90px;
+      margin-bottom: -10%;
+      border-color: rgb(51, 17, 0);
+      border-color: rgba(51, 17, 0, 0.2);
+      font-weight: 700;
+      padding: 15px 0;
+      transition: padding .5s;
+      border-bottom: solid 2px goldenrod;
+ 
+  }
+ 
+   
+   table{
+  background-color:#fff;
+  border: 2px solid #D3D3D3;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+ -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+
+  
+}
+td, tr,th{
+  border: 1px solid #D3D3D3;
+  text-align: center;
+ 
+
+ }
+  
+  html, body {
+      font-family: 'Lato', sans-serif;
+      
+      
+  }
+  
+ .box {
+ width: 50%;
+ margin: 0 auto;
+ padding: 18px;
+ background-clip: padding-box;
+ text-align: center;
+ margin-bottom: -30px;
+ margin-top: -9px;
+}
+
+.button {
+
+ font-size: 1em;
+ padding: 10px;
+ color: #fff;
+ border: 2px solid #FF9800;
+ border-radius: 20px;
+ text-decoration: none;
+ cursor: pointer;
+ transition: all 0.3s ease-out;
+}
+.button:hover {
+ background: #06D85F;
+}
+.popup h2 {
+ margin-top: -5PX;
+ color: #741111;
+ font-family: Tahoma, Arial, sans-serif;
+ font-size: 19px;
+ text-align: center;
+}
+.overlay {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: rgba(0, 0, 0, 0.7);
+ transition: opacity 500ms;
+ visibility: hidden;
+ opacity: 0;
+}
+.overlay:target {
+ visibility: visible;
+ opacity: 1;
+}
+
+.popup {
+ margin: 60px auto;
+ padding: 20px;
+ background: #fff;
+ border-radius: 5px;
+ width: 80%;
+ position: relative;
+ transition: all 3s ease-in-out;
+ margin-top: 120px;
+ 
+ 
+}
+
+.popup .close {
+ 
+ margin-top: -22px;
+ margin-right: -18px;
+ transition: all 200ms;
+ font-size: 30px;
+ font-weight: bold;
+
+ color: #333;
+}
+.popup .close:hover {
+ color: red;
+}
+  
+td, th {
+border: 2px solid #F1F1F1;
+
+
+}
+  
+  
+section {
+      align-items: center;
+      padding: 50px 60px;
+      
+  }
+  
+  }
+          ul {
+              list-style-type: none;
+          }
+          
+          a:hover,
+          a:focus {
+              text-decoration: none;
+          }
+          .slideanim {
+              visibility: hidden;
+          }
+          
+          
+          .td1{
+              color: orangered;
+          }
+          
+          
+          /*  ******* Header + Navigation ******* */
+          
+          .navbar {
+              background-color:#fff;
+              border-color: rgb(51, 17, 0);
+              border-color: rgba(51, 17, 0, 0.2);
+              font-family:Arial, Helvetica, sans-serif;
+              font-weight: 700;
+              padding: 15px 0;
+              transition: padding .5s;
+              border-bottom: solid 2px goldenrod;
+          }
+          
+          .navbar .navbar-brand {
+              color: #fff;
+              font-family: 'Leckerli One', cursive;
+              font-weight: 500;
+              text-transform: none;
+              font-size: 25px;
+              padding-left: 15px;
+              text-shadow: black 0.3em 0.3em 0.3em;
+          }
+          
+          .navbar .navbar-brand:hover,
+          .navbar .navbar-brand:focus {
+              color: #ffc266;
+              transition: color 1s;
+          }
+          
+          .navbar .navbar-nav {
+              padding-right: 50px;
+          }
+          
+          .navbar .navbar-nav > li > a {
+              text-transform: uppercase;
+              margin: auto 5px;
+              font-weight: 600;
+              font-size: 16px;
+              color:black;
+              font-family: Arial, Helvetica, sans-serif;
+              
+          }
+          
+          .navbar .navbar-nav > li > a:hover,
+          .navbar .navbar-nav > li > a:focus:hover {
+           
+              border-bottom:#ffc266 3px solid;
+              
+          
+          }
+          
+          
+          .navbar .navbar-nav > li.active > a:hover,
+          .navbar .navbar-nav > li.active > a:focus:hover {
+              background-color: transparent;
+          }
+          
+          
+          
+          
+          
+          </style>    
+    <script>
+         $('.close').click(function() {
+  $('.alert').hide();
+})
+  
+    </script>
+</body>
+
+</html>

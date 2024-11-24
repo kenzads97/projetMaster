@@ -1,0 +1,133 @@
+
+.dropdown-item{
+  font-family: 'Lato', sans-serif;;
+}
+.bi-chevron-compact-right{
+font-weight: bold;
+}
+.container{
+ 
+}
+.dropdown:hover>.dropdown-menu  {
+    display: block;
+   }
+.dropdown .dropdown-menu{
+    background-color:white;
+  font-size: 16px;
+  right: 50%;
+  color:black;
+  margin-top: 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+
+}
+
+.dropdown .dropdown-menu li:hover{
+  color :#ffc266;
+}
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+
+
+.dropdown-item:active {
+  background:#F9BB09;
+  color: black;
+}
+.text-center
+{
+  color:#000;
+  margin:40px 0 60px 0;
+  font-weight:bold;
+  font-family: 'Lato', sans-serif;;
+}
+
+.our-team-main
+{
+  width:100%;
+  height:auto;
+  
+  border-bottom:5px #616160 solid;
+  background:#fff;
+  text-align:center;
+  border-radius:10px;
+  overflow:hidden;
+  position:relative;
+  transition:0.5s;
+  margin-bottom:28px;
+
+}
+
+
+
+#c{
+  background-color:#F1F1F1;
+  font-family:Arial, Helvetica, sans-serif;
+  height: 50px;
+
+}
+.our-team-main a:hover{
+  color: blue;
+
+}
+.our-team-main a
+{
+  color: #494949;
+  font-size:16px;
+  font-weight:700;
+  text-align: center;
+}
+
+.our-team-main a
+{
+  margin-bottom:0;
+}
+
+.team-back
+{
+  font-family: 'Lato', sans-serif;
+  width:100%;
+  height:auto;
+  position:absolute;
+  top:0;
+  left:0;
+  padding:5px 15px 0 15px;
+  text-align:left;
+  background:#fff;
+  
+}
+
+
+
+.our-team-main:hover .team-front
+{
+  bottom:-200px;
+  transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+  border-color:#777;
+  transition:0.5s;
+}
+
+
+/*our-team-main*/
